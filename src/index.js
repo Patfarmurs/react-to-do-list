@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import TodoContainer from './components/TodoContainer';
+import './App.css';
+// eslint-disable-next-line
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <TodoContainer />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
